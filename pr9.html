@@ -1,0 +1,71 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+body{
+font-family:Arial;
+margin:0;
+}
+header{
+background:orange;
+color:white;
+text-align:center;
+padding:10px;
+}
+.container{
+column-count:3;
+padding:10px;
+}
+.box{
+background:#eee;
+padding:10px;
+margin:10px;
+display:inline-block;
+width:100%;
+transition:0.3s;
+}
+.box:hover{
+transform:scale(1.05);
+}
+.box{
+animation:fade 1s;
+}
+fade{
+{opacity:0;}
+{opacity:1;}
+}
+(max-width:700px){
+.container{
+column-count:1;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<h2>My Web Page</h2>
+<h2>Practical 9</h2>
+<h2>Tanushree Dhole</h2>
+<h2>CS25180</h2>
+</header>
+<div class="container">
+<div class="box">
+<i class="fa fa-star"></i>
+<h3>HTML</h3>
+<p>HTML is used to create structure.</p>
+</div>
+<div class="box">
+<i class="fa fa-heart"></i>
+<h3>CSS</h3>
+<p>CSS is used to style webpage.</p>
+</div>
+<div class="box">
+<i class="fa fa-user"></i>
+<h3>Responsive</h3>
+<p>This page works on mobile.</p>
+</div>
+</div>
+</body>
+</html>
